@@ -26,8 +26,12 @@ export const useMenu = (setToggle: Dispatch<SetStateAction<boolean>>) => {
     return menuRef;
 };
 
-// for overlay menu
-
-// Usage: const menuRef = useClickOutside(your_setter_function);
-// attach the returned menuRef to parent div of menu: <div ref={menuRef}...
-// does not work if used for menu inside another meny
+/**
+ * For overlay menu
+ * 
+ * Usage: const menuRef = useMenu(your_setter_function);
+ * Attach the returned menuRef to parent div of menu: <div ref={menuRef}... >
+ * 
+ * Does not work if used for menu inside another menu
+ *  - checkout https://github.com/ChaiKeshab/common-hooks/blob/main/useNestedMenu.tsx for that
+ */
