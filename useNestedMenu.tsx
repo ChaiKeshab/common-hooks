@@ -79,6 +79,6 @@ export const useNestedMenu = (disableClose = false) => {
  * <div ref={menuRef} ... >
  * 
  * Extras:
- * - If you have a modal toggler inside the menu, pass the modal toggle state to disable menu closure when the modal is open.
+ * - If you have a modal toggler inside the menu, pass the modal toggle state to disable menu closing when the modal is open.
  *   Example: const { addMenu, removeMenu } = useNestedMenu(your_toggler_state: boolean);
  */
